@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+	    <meta charset="utf-8">
+
+	    <title>SpaceAssault</title>
+
+	    <link rel="stylesheet" href="css/screen.css">
+
+	</head>
+
+	<body class="Flex-container">
+		<button id="startGame" onclick="startGameBtn()">Start Game</button>
+		<button id="buildMode" onclick="ToggleBuildMode()">Build Mode</button>
+		<canvas id="myCanvas" width="800" height="800" onclick="CanvasClicked(event)"></canvas>
+		<div id="moduleBtns">
+			<button id="EmptyModuleBtn" onclick="EmptyBuildSelected()">Empty Module
+			</button>
+			<button id="TurretModuleBtn" onclick="TurretBuildSelected()">Turret
+			</button>
+			<button id="ResourceModuleBtn" onclick="ResourceBuildSelected()">Resource Module
+			</button>
+		</div>
+		
+		
+		<script src="js/engine/ResourceModule.js"></script>
+		<script src="js/engine/EmptyModule.js"></script>
+		<script src="js/engine/Turret.js"></script>
+		<script src="js/engine/LifeModule.js"></script>
+		<script src="js/engine/EmptySpace.js"></script>
+		<script src="js/enemy.js"></script>
+		<script src="js/Enemies.js"></script>
+		<script src="js/Player.js"></script>
+		<script src="js/engine/Map.js"></script>
+		<script src="js/engine/Game.js"></script>	
+		<script src="js/script.js"></script>
+
+	</body>
+
+</html>
